@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:${IMAGE_TAG_POSTGRES:-14-alpine}
+    container_name: podio-strapi-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-podio}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-podio}
+    volumes:
+      - podio-strapi-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  podio-strapi-postgres-data:
