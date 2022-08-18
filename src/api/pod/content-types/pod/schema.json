@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pods",
+  "info": {
+    "singularName": "pod",
+    "pluralName": "pods",
+    "displayName": "Pod",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "podName": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string"
+    },
+    "podMembers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "podLead": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
