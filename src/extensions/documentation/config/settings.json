@@ -1,0 +1,20 @@
+{
+  "info": {
+    "title": "Podio API",
+    "contact": {
+      "name": "Podio API Support",
+      "url": "http://www.povio.com/podio",
+      "email": "podio@povio.com"
+    },
+    "termsOfService": "https://povio.com/podio",
+    "license":     {
+      "name": "Podio License",
+      "url": "https://povio.com/podio"
+    },
+    "version": "0.0.1"
+  },
+  "externalDocs":     {
+    "description": "",
+    "url": ""
+  }
+}
